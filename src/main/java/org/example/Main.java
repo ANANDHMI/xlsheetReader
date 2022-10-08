@@ -26,7 +26,7 @@ public class Main {
         final List<Double> markList = new ArrayList<>();
 
 
-        File file = new File("Reader file path xlsheet");
+        File file = new File("source of truth file path");
         try {
             FileInputStream inputStream = new FileInputStream(file);
 
@@ -71,8 +71,8 @@ public class Main {
         System.out.print("keys : ");
         System.out.println(subjectList);
         System.out.print("values : ");
-        System.out.print(markList);
-
+        System.out.println(markList);
+        System.out.print("Extracted Key values without duplicates : ");
         System.out.println(mapping);
         //This method creates new sheet and insert the map used in
         createNewSheet.createSheet(mapping);

@@ -25,9 +25,9 @@ public class writeValues {
             row.createCell(1).setCellValue((Double) entry.getValue());
         }
 
-        FileOutputStream file = new FileOutputStream("new file will be created -->filepath/filename<--");
+        FileOutputStream file = new FileOutputStream("new created filepath");
         workbook.write(file);
         file.close();
-        System.out.println("Data Copied to Excel");
+        System.out.println("Data Copied to new Excel file.");
     }
 }
